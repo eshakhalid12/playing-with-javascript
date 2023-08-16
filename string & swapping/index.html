@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS WORK </title>
+</head>
+<script>
+    //                     ***** String length and retrieving the number of character *****
+
+    var tweet = prompt("Compose your tweet..!");
+    var tweetCount = tweet.length;
+    alert("You have written " + " " + tweetCount + " character , you have " + (140 - tweetCount) + " character remaining.");
+
+
+    //                       ***** Slicing and Extracting Parts of a string *****
+
+    var tweet = prompt("Compose your tweet..!!");
+    var tweetCount140 = tweet.slice(0, 140);
+    alert(tweetCount140);
+
+
+    //                             ***** Changing string chasing in text *****
+    var name = "esha";
+    name = name.toUpperCase();
+
+
+    //                            ***** Changing string chasing (TASK NO : 1) *****
+
+    // 1- create a var that store the name that user enter via prompt
+    var name = prompt("What is your name ?");
+
+    // 2- capitalize the first letter of their name
+    // a - isolate the first character
+    var firstChar = name.slice(0, 1);
+    alert(firstChar);
+    //    b- turn the firstChar into uppercase  
+    var upperCaseFirstChar = firstChar.toUpperCase();
+    alert(upperCaseFirstChar);
+    //    c- isolate the rest of the name 
+    var restOfName = name.slice(1, name.length);
+    alert(restOfName);
+    //   d- concatenation of the first character with the rest of the character
+    var capitalizeName = upperCaseFirstChar + restOfName;
+
+    //  3- we use the capitalize version of their name to greet them using an alert
+    alert("Hello!" + " " + capitalizeName);
+
+
+    //                     ***** Airthmetic and Modulo Operators in Javascript *****
+
+    var dogAge = prompt("How old is your dog ?");
+    var humanAge = ((dogAge - 2) * 4) + 21;
+    alert("Your dog is" + " " + humanAge + " " + "is old in human years.");
+
+
+//                  ***** Increment and Decrement Expression *****
+
+    /* when you add , multiply , divide  2 or more number use this
+      += , -= , *= , /= 
+    */
+
+</script>
+
+<body>
+
+</body>
+
+</html>

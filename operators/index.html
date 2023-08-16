@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced use of operator</title>
+</head>
+<script>
+     
+    //  Task 1: Using the logical && operator
+
+    var score = 8;
+
+    document.write("Mid-level skills : " , score > 0 && score < 10);
+    document.write("<br>");
+    document.write("Mid-level skills : " , score < 0 && score > 10);
+    document.write("<br>" , "<br>");
+
+
+    // Task 2: Using the logical || operator
+
+    var timeRemaining = 0;
+    var energy = 10;
+
+    document.write("Game Over : " , timeRemaining == 0 || energy == 0);
+    document.write("<br>");
+    document.write("Game Over : " , timeRemaining == 10 || energy == 0);
+    document.write("<br>" , "<br>");
+
+
+    // Task 3: Using the modulus operator, %, to test if a given number is odd
+
+    var num1 = 2;
+    var num2 = 5;
+    var test1 = num1 % 2;
+    var test2 = num2 % 2;
+    var result1 = test1 == 0;
+    var result2 = test2 == 0;
+
+    document.write("Is" , " " , num1 , " " , "an even number ? " , result1);
+    document.write("<br>");
+    document.write("Is" , " " , num2 , " " , "an odd number ? " , result2);
+    document.write("<br>" , "<br>");
+
+
+    // Task 4: Add numbers using the + operator
+
+     var a = 5;
+     var b = 10;
+     var c = a + b;
+
+     document.write("The addition of a and b is : " , c);
+     document.write("<br>" , "<br>");
+
+
+    // Task 5: Concatenate numbers and strings using the + operator
+
+    var now = "Now in";
+    var three = 3;
+    var d = "D!";
+
+    document.write(now + " " + three + d);
+    document.write("<br>" , "<br>");
+
+
+    // Task 6: Use the += operator to accumulate values in a variable
+
+    var counter = 0;
+    counter += 5;
+    counter += 3;
+    
+    document.write(counter);
+    document.write("<br>" , "<br>" , "<br>");
+
+</script>
+<body>
+    
+</body>
+</html> 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA TYPE & OPERATORS</title>
+</head>
+<script>
+    document.write(2 + 2 + "<br>");
+    document.write(3 - 1 + "<br>");
+    document.write(5 * 5 + "<br>");
+    document.write(9 / 3 + "<br>");
+    document.write(22 % 5 + "<br>");       
+    document.write(10 == 10, "<br>");
+    document.write(6 != 6, "<br>");
+    document.write(8 > 4, "<br>");
+    document.write(6 < 3, "<br>");
+    document.write(2 * (3 + 1) + "<br>" + "<br>");
+
+    // if datatype is different and equal to same number then ans is "TRUE"
+    document.write(20 == "20", "<br>");
+    // if datatype is different and equal to same number then ans is "TRUE"
+    document.write(10 == 10, "<br>");
+    // if datatype is same and equal to same number then ans is "TRUE"
+    document.write(1 === 1, "<br>");
+    // if datatype is different and equal to same number then ans is "FALSE"
+    document.write(2 === "2", "<br>");
+    // if datatype is different and equal to same number then ans is "TRUE" 
+    document.write(3 !== "3", "<br>");
+    // if datatype is different and equal to same number then ans is "FALSE" 
+    document.write(3 !== 3, "<br>", "<br>");
+
+    // OR OPERATOR 
+    var currentTime = 10;
+    document.write(currentTime > 9 && currentTime < 17, "<br>");
+    document.write(true && true, "<br>");
+    document.write(true && false, "<br>");
+    document.write(false && false, "<br>");
+    document.write(false && true, "<br>", "<br>");
+
+    
+    // AND OPERATOR 
+    var currentTime = 7;
+    document.write(currentTime < 9 || currentTime > 17 , "<br>");
+    document.write(true || false , "<br>");
+    document.write(true || true , "<br>");
+    document.write(false || true , "<br>");
+    document.write(false || false, "<br>" , "<br>");
+
+
+    // NOT OPERATOR 
+    var petHungry = true;
+    petHungry = false;
+    document.write("Pet is hungry : " , petHungry , "<br>");
+    document.write("Pet is hungry : " , !petHungry , "<br>" , "<br>");
+
+    var a = "Inter";
+    var b = "Net";
+    document.write(a + b , "<br>");
+    document.write("Work" + "Book" ,"<br>");
+    document.write(365 + " " + "days" , "<br>");
+    document.write(12 + " " + "months" , "<br>");
+    document.write(1 + "2" , "<br>" , "<br>");
+
+    // Addition assignment operator +=
+    // Using the addition assignment operator reduces the lines of your code.
+    var overTime = 1;
+    overTime += 2;
+    overTime += 1;
+    overTime += 2;
+    overTime += 3;
+    document.write(overTime , "<br>");
+
+    var longString = "Once";
+    longString += "upon";
+    longString += "a";
+    longString += "time";
+    longString += ".....";
+    document.write(longString , "<br>");
+
+     // without using the addition assignment operator  the lines of your code is increase.
+     var mon = 1;
+     var tue = 2;
+     var wed = 1;
+     var thur = 2;
+     var fri = 3;
+     document.write(mon + tue + wed + thur + fri + "<br>");
+     document.write(1*2+3);
+     
+</script>
+
+<body>
+
+    <!-- "DATA TYPE" -->
+
+    <!-- THERE ARE 7 DATA TYPES IN JAVA SCRIPT -->
+
+    <!--
+         1-string
+         2-number
+         3-boolean
+         4-null
+         5-undefined
+         6-bigInt
+         7-symbol 
+    -->
+    <!------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- "OPERATORS" -->
+
+    <!-- 
+         1- Airthmetic operators in JS
+           + addition
+           - subtraction
+           * multiplication
+           / division
+           % modulus (remainder is answer)
+
+        2- Comparison operators in JS
+           > greater than
+           < less than
+           == equal to
+           != not equal to
+           === strict equality
+           
+        3- Logical operators in JS
+           && (AND) Checks for both conditions can be true
+           || (OR)  Checks for atleats one condition can be true
+           ! (NOT)  Return false if the result is true
+
+
+-->
+
+</body>
+
+</html>
