@@ -74,22 +74,19 @@ function letterFinder(word , match) {
         console.log("please pass correct argument to the function")
     }
 
-    
+         
 }
 
 letterFinder([] , [])
 letterFinder("cat" , "c")
 
 
-
-
-
-
-
 //-----------------------
 
 function letterFinder(word, match) {
+
     var condition1 = typeof(word) == 'string' && word.length >= 2; //if the word is a string and the length is greater than or equal to 2
+    
     var condition2 = typeof(match) == 'string' && match.length == 1; //if the match is a string and the length is equal to 1
     if(condition1 && condition2) { //if both condition matches
         for(var i = 0; i < word.length; i++) {
@@ -107,3 +104,7 @@ function letterFinder(word, match) {
 }
 letterFinder([],[])
 letterFinder("cat","c")
+
+
+
+
