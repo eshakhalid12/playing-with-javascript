@@ -142,11 +142,95 @@ console.log(virtualPet.sleepy)   // false
 
 
 //TASK:-
+
 function addTwoNum(a , b) {
     console.log(a + b);
 }
+
 
 function randomNum() {
     return Math.floor( ( Math.random() * 10 ) + 1 );
 }
 
+
+function specificNum() {
+    return 42;
+}
+
+
+var useRandom = true;
+
+
+var getNumber;
+
+if (useRandom) {
+    getNumber = randomNum;
+}
+else{
+    getNumber = specificNum
+}
+
+
+addTwoNum( getNumber() , getNumber());
+// addTwoNum( specificNum() , specificNum() );
+// addTwoNum( specificNum() , randomNumm() );
+
+
+//                         ***** Use of Backtick *****
+
+var jack = "jackie";
+
+console.log(`your allternative name is ${jack}`);
+
+
+//                     ***** Scoping with var , let and const *****
+/* 
+1- "let" and "const" --> is known as block scope , variable can't be redeclared , can't be used before it is declare .
+2- "var" --> can be used before it is declared , same variable can be redeclared , can be scoped to be a function or globally .
+*/
+
+var name = 'Mark';
+console.log(name);
+
+
+let color;
+color = 'red';
+console.log(color);
+
+const veggie = 'potato';
+console.log(veggie);
+
+
+
+//                 ***** Practice *****
+
+/*  Ques : 1
+initiativeValue is the two function, so when initiativeValue() is called, it returns 2.
+invcrea is the one function, so when invcrea() is called twice, it returns 1 each time.
+The calculate function adds these values: 2 + 1 + 1.
+*/
+function two () {
+    return 2;
+}
+
+function one () {
+    return 1;
+}
+
+function calculate (initiativeValue , invcrea) {
+    return initiativeValue() + invcrea () + invcrea()
+}
+console.log(calculate(two , one))
+
+
+ // Ques no : 2
+ function meal(animal) {
+    animal.food = animal.food + 10
+}
+var dog = {
+    food : 10
+};
+meal(dog);   // 20
+meal(dog);   // 10
+
+console.log(dog.food);
