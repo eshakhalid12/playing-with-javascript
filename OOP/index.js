@@ -69,6 +69,12 @@ mira.turboOn();
 
 //                             ***** Principles of OOP *****
 
+/*
+1-OOP Principles: Inheritance
+2-OOP Principles: Encapsulation
+3-OOP Principles: Abstraction
+4-OOP Principles: Polymorphism
+
 // This allows us to utilize the "Object.create()" method to create or instansiate objects of our classes.
 class Animal1 {
 
