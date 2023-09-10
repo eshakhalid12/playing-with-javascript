@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MARKSHEET </title>
+</head>
+<script>
+    var a = prompt('Enter your Name');
+    var b = prompt('Enter your Class');
+
+    var math = prompt('Enter your Math Marks');
+    var physics = prompt('Enter your Physics Marks');
+    var english = prompt('Enter your Enlish Marks');
+    var chemistry = prompt('Enter your Chemistry Marks');
+    var urdu = prompt('Enter your Urdu Marks');
+
+    // tm means "total marks" , om means "obtained marks" , per means "percentage"
+    
+    var tm = 500;
+    var om = parseInt(math) + parseInt(physics) + parseInt(english) + parseInt(chemistry) + parseInt(urdu);
+    document.write("Your total marks is :");
+
+    document.write(om + "<br>");
+    var per = om * 100 / tm;
+    document.write("your percentage is:" + per + "%");
+
+</script>
+
+<body>
+
+</body>
+
+</html>
