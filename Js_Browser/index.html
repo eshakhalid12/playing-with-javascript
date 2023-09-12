@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //                  ***** Event Handling *****
+
+const target = document.querySelector('body');
+function handleClick() {
+    alert("Clicked the body");
+}
+target.addEventListener('click', handleClick);
+
+function handleClick2() {
+    alert("Clicked the heading");
+}
+</script>
+
+
+<body onclick="handleClick()">
+
+    <h1 id="heading"> ** Javascript DOM manipulation ** </h1>
+
+    <p class="txt">The DOM is an in-memory representation of the active HTML document. Any changes made are local and do
+        not affect
+        the document stored on the webserver. </p>
+
+    <h2> ** Javascript Modules ** </h2>
+
+    <h3> ** Javascript Dom Selector ** </h3>
+
+    <p class="txt">
+        1- This querySelector( ) method returns the first element in the document that matches the selector.
+        <br>
+        2- This querySelectorAll( ) method returns all elements in the document that match the selector.
+        <br>
+        3- This getElementById( ) method returns a specific element whose id matches the selector.
+        <br>
+        4- This getElementsByClassName( ) method returns all elements in the document that has the class specified in the
+        selector.
+    </p>
+
+    <h4 onclick="handleClick2()"> ** Event Handling ** </h4>
+    <p>
+
+        1- Button click is an example of an event that your code can listen out for.
+        <br>
+        2- Icon tap is an example of an event that your code can listen out for.
+    </p>
+
+     <h5> ** Object Notation - JSON ** </h5>
+
+    <p> When working with JSON it is common to convert it back to a JavaScript object to work with its properties. To do this you need to use the global built-in JSON object and its parse method.</p>
+
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>Example Domain</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis molestias fugit doloremque, dolorum atque
+        sunt, maiores facilis eveniet cumque quam voluptatem facere vel error quas distinctio. Eius id iusto omnis!</p>
+
+
+
+
+
+
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+        var h1 = document.querySelector('h1');
+
+        var arr = [
+            'Example Domain',
+            'First Click',
+            'Second Click',
+            'Third Click'
+        ]
+
+        var handleClicks = ()=>{
+            switch(h1.innerText) {
+                case arr[0]:
+                    h1.innerText = arr[1]
+                    break;
+                    case arr[1]:
+                    h1.innerText = arr[2]
+                    break;
+                    case arr[2]:
+                    h1.innerText = arr[3]
+                    break;
+                    default:
+                    h1.innerText = arr[0]
+                    break;
+            }
+        }
+
+        h1.addEventListener('click' , handleClicks);
+
+    </script>
+</body>
+
+</html>
